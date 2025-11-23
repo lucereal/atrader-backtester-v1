@@ -1,0 +1,110 @@
+{
+  "contract": {
+    "additional_underlyings": null,
+    "cfi": "OCASPS",
+    "contract_type": "call",
+    "correction": null,
+    "exercise_style": "american",
+    "expiration_date": "2024-12-02",
+    "primary_exchange": "BATO",
+    "shares_per_contract": 100,
+    "strike_price": 600,
+    "ticker": "O:SPY241202C00600000",
+    "underlying_ticker": "SPY"
+  },
+  "aggs": {
+    "timestamp": "hour",
+    "from_date": "2024-12-02",
+    "to_date": "2024-12-02",
+    "aggs": [
+      {
+        "open": 3.08,
+        "high": 3.82,
+        "low": 2.7,
+        "close": 2.99,
+        "volume": 2084,
+        "vwap": 3.3086,
+        "timestamp": 1733148000000,
+        "transactions": 418,
+        "otc": null
+      },
+      {
+        "open": 3.1,
+        "high": 4.05,
+        "low": 2.6,
+        "close": 2.81,
+        "volume": 1724,
+        "vwap": 3.1355,
+        "timestamp": 1733151600000,
+        "transactions": 380,
+        "otc": null
+      },
+      {
+        "open": 2.83,
+        "high": 3.9,
+        "low": 2.65,
+        "close": 3.68,
+        "volume": 768,
+        "vwap": 3.3946,
+        "timestamp": 1733155200000,
+        "transactions": 171,
+        "otc": null
+      },
+      {
+        "open": 3.7,
+        "high": 3.98,
+        "low": 3.42,
+        "close": 3.63,
+        "volume": 287,
+        "vwap": 3.7756,
+        "timestamp": 1733158800000,
+        "transactions": 105,
+        "otc": null
+      },
+      {
+        "open": 3.6,
+        "high": 3.85,
+        "low": 3.43,
+        "close": 3.83,
+        "volume": 366,
+        "vwap": 3.6911,
+        "timestamp": 1733162400000,
+        "transactions": 82,
+        "otc": null
+      },
+      {
+        "open": 3.72,
+        "high": 3.92,
+        "low": 3.1,
+        "close": 3.92,
+        "volume": 674,
+        "vwap": 3.5231,
+        "timestamp": 1733166000000,
+        "transactions": 109,
+        "otc": null
+      },
+      {
+        "open": 3.9,
+        "high": 4.28,
+        "low": 3.5,
+        "close": 3.55,
+        "volume": 548,
+        "vwap": 3.9457,
+        "timestamp": 1733169600000,
+        "transactions": 151,
+        "otc": null
+      },
+      {
+        "open": 3.76,
+        "high": 4.1,
+        "low": 3.65,
+        "close": 4.1,
+        "volume": 159,
+        "vwap": 3.8351,
+        "timestamp": 1733173200000,
+        "transactions": 20,
+        "otc": null
+      }
+    ]
+  }
+}

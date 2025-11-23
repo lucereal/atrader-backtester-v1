@@ -1,0 +1,1 @@
+[OptionsContract(additional_underlyings=None, cfi='OCASPS', contract_type='call', correction=None, exercise_style='american', expiration_date='2024-12-02', primary_exchange='BATO', shares_per_contract=100, strike_price=600, ticker='O:SPY241202C00600000', underlying_ticker='SPY')]
