@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from typing import Optional
+from typing import List, Optional
 from config import Config
 
 
@@ -79,3 +79,24 @@ class TimeSimulator:
     def get_date_string(self) -> str:
         """Get current date as string for API calls"""
         return self.get_current_time().strftime("%Y-%m-%d")
+    
+    def get_previous_trading_day(self) -> str:
+        """Get the previous trading day, skipping weekends and holidays"""
+        current_date = self.get_current_time().date()
+        previous_date = current_date - timedelta(days=1)
+        
+        # Keep going back until we find a trading day
+        while not self.is_trading_day(datetime.combine(previous_date, datetime.min.time())):
+            previous_date -= timedelta(days=1)
+        
+        return previous_date.strftime("%Y-%m-%d")
+    
+    
+    def is_trading_day(self, date: datetime) -> bool:
+        """Check if a date is a trading day (not weekend or holiday)"""
+        # Check if weekend
+        if date.weekday() >= 5:  # Saturday = 5, Sunday = 6
+            return False
+    
+            
+        return True

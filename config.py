@@ -6,11 +6,18 @@ from typing import Optional
 
 class Config:
     # Rate limiting settings
+    enable_rate_limiting: bool = True
     calls_before_sleep: int = 5
     sleep_duration: float = 1.0
     
     # API Configuration
     api_key: Optional[str] = None
+    
+    # Data collection settings
+    enable_quotes_data: bool = False  # Set to True if you have access to quotes data
+    
+    # Market holiday handling
+    enable_holiday_checking: bool = False  # Set to True to check for holidays (requires static holiday list)
     
     # Backtesting parameters
     simulation_date: str = "2026-01-20"  # YYYY-MM-DD format
